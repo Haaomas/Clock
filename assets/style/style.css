@@ -1,19 +1,20 @@
+/* Palette de couleur : https://flatuicolors.com/palette/nl 
+ * White : #f1f2f6 
+ */
+
 /*Généralité*/
 html {
     background: url(../images/maurice\ wallpaper.jpg);
     background-size: cover;
-    font-family: 'helvetica neue';
     text-align: center;
     font-size: 10px;
 }
 
 body {
-    margin: 0;
     font-size: 2rem;
     display: flex;
-    flex: 1;
-    min-height: 100vh;
     align-items: center;
+    min-height: 100vh;
 }
 
 /*HEADER*/
@@ -21,13 +22,14 @@ body {
 /*MAIN*/
 
 .clock {
+    position: relative;
     width: 30rem;
     height: 30rem;
-    border: 20px solid white;
+    border: 20px solid #1B1464;
     border-radius: 50%;
     margin: 50px auto;
-    position: relative;
     padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow:
         0 0 0 4px rgba(0, 0, 0, 0.1),
         inset 0 0 0 3px #EFEFEF,
@@ -40,34 +42,31 @@ body {
     width: 100%;
     height: 100%;
     transform: translateY(-3px);
-    /* account for the height of the clock hands */
 }
 
 .hand {
-    height: 6px;
     position: absolute;
-    top: 50%;
-    width: 50%;
     transform-origin: right;
-    border-radius: 3px;
+    width: 50%;
+    height: 6px;
+    top: 50%;
+    border-radius: 2px;
 }
 
 .hour-hand {
-    /* background-color: rgb(152, 94, 37); */
-    background-color: rgb(254, 0, 0);
-    /* width: 25%; */
+    background-color: #EA2027;
+    width: 30%;
+    left: 20%;
 }
 
 .main-hand {
-    /* background-color: rgb(133, 83, 66); */
-    background-color: rgb(53, 1, 255);
-    /* width: 40%; */
+    background-color: #009432;
+    width: 40%;
+    left: 10%;
 }
 
 .second-hand {
-    /* background-color: rgb(95, 65, 69); */
-    background-color: rgb(181, 245, 244);
-    /* width: 50%; */
+    background-color: #f1f2f6;
 }
 
 /*FOOTER*/
